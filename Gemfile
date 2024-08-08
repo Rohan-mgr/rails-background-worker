@@ -67,3 +67,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "httparty", "~> 0.22.0"
+
+gem "json", "~> 2.7"
+gem 'sidekiq', '~> 7.3'
