@@ -1,11 +1,4 @@
 <h1>Posts</h1>
-<ul>
-    <% @data.each do |post| %>
-        <li>
-            <%= post['title'] %>
-        </li>
-        <li>
-            <%= post['body'] %>
-        </li>
-    <% end %>
-</ul>
+<% @posts.each do |post| %>
+    <p><%= post['id'] %></p>
+<% end %>

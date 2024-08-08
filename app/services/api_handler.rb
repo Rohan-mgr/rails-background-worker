@@ -2,7 +2,7 @@ require 'httparty'
 
 class ApiHandler
   include HTTParty
-  base_uri 'jsonplaceholder.typicode.com'
+  base_uri ENV['JSONPLACEHOLDER_BASEURL']
 
   def initialize
     @options = {}
