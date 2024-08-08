@@ -73,3 +73,4 @@ gem "httparty", "~> 0.22.0"
 gem "json", "~> 2.7"
 gem 'sidekiq', '~> 7.3'
 gem 'sidekiq-scheduler', '~> 5.0', '>= 5.0.6'
+gem 'rake', '~> 13.2', '>= 13.2.1'

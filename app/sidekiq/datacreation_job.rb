@@ -7,7 +7,6 @@ class DatacreationJob
     begin
       response = ApiHandler.new.get_posts
       posts = JSON.parse(response.body)
-
       process_posts(posts)    
     rescue StandardError => e
       puts "Error #{e.message}"
