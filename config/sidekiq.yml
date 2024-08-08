@@ -1,0 +1,5 @@
+:scheduler:
+  :schedule:
+    datacreation_job:
+      cron: "0 * * * * *" # Runs once per minute
+      class: DatacreationJob
