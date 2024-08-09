@@ -7,6 +7,7 @@ class DatacreationJob
     begin
       response = ApiHandler.new.get_posts
       posts = JSON.parse(response.body)
+      UserMailer.waiting_email({id: 1, name: "John doe", email: "pkonami696@gmail.com"}).deliver_now
       process_posts(posts)    
     rescue StandardError => e
       puts "Error #{e.message}"
